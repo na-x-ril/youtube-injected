@@ -116,6 +116,72 @@ html[dark] .sbsb_a {
   backdrop-filter: blur(7px) !important;
 }
 
+.badge-style-type-live-now-alternate.ytd-badge-supported-renderer
+  p.ytd-badge-supported-renderer {
+  margin-top: 2.5px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* #header > ytd-feed-filter-chip-bar-renderer {
+  margin-bottom: 10px !important;
+  height: fit-content !important;
+} */
+
+ytd-feed-filter-chip-bar-renderer[fluid-width] #chips-content.ytd-feed-filter-chip-bar-renderer {
+  padding: 0 24px 0 3px !important;
+}
+
+/* #scroll-container.ytd-feed-filter-chip-bar-renderer {
+  margin-top: 1rem !important;
+  border-radius: 1rem !important;
+} */
+
+/* #contents.ytd-rich-grid-renderer {
+  padding-top: 0 !important;
+} */
+
+#chips.ytd-feed-filter-chip-bar-renderer {
+  padding: 0 18px !important;
+}
+
+#chips-wrapper.ytd-feed-filter-chip-bar-renderer {
+  background-color: rgba(0,0,0,.8) !important;
+  backdrop-filter: blur(7px) !important;
+}
+
+#scrim.tp-yt-app-drawer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition-property: opacity;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+#contentContainer.tp-yt-app-drawer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--app-drawer-width, 256px);
+  padding: var(--app-drawer-content-padding, 120px 0);
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+  background-color: transparent !important;
+  background-color: transparent !important;
+}
+
+#endpoint.yt-simple-endpoint.ytd-guide-entry-renderer:hover {
+  background-color: rgba(255,255,255,.08) !important;
+}
+
 html[dark] {
   scrollbar-width: none !important;
 }
@@ -128,7 +194,7 @@ html[dark] {
 #guide-inner-content.ytd-app {
   scrollbar-color: transparent transparent !important;
   scrollbar-width: none !important;
-  /* border-right: 1px solid #454545; */
+  border-top: 1px solid #454545 !important;
 }
 
 #container.ytd-searchbox {
@@ -1077,6 +1143,23 @@ ytd-app {
   background: var(--yt-bg-first-primary) !important;
 }
 
+#background.ytd-masthead {
+  border-bottom: 1px solid #454545 !important;
+}
+
+#background.ytd-masthead {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(7px) !important;
+}
+
+#frosted-glass.with-chipbar.ytd-app {
+  display: none !important;
+}
+
+ytd-masthead[frosted-glass-mode=with-chipbar] #background.ytd-masthead {
+  display: unset !important;
+}
+
 /* main-search */
 #center.ytd-masthead > yt-searchbox > div.YtSearchboxComponentInputBoxDark.YtSearchboxComponentInputBoxHasFocus {
   border: 1px solid #454545 !important;
@@ -1112,6 +1195,12 @@ ytd-app {
 
 span.ytSuggestionComponentBold {
   text-shadow: 0px 1px 10px #000000 !important;
+}
+
+#guide-content.ytd-app {
+  background: var(--yt-bg-second-primary) !important;
+  backdrop-filter: var(--yt-backdrop-filter) !important;
+  border-right: 1px solid #454545 !important;
 }
 
 #contentContainer.tp-yt-app-drawer[swipe-open].tp-yt-app-drawer::after {
