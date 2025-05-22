@@ -1,0 +1,37 @@
+{
+  "name": "YouTube Injector",
+  "version": "1.1.0",
+  "description": "Customize the Entire Website UIs and Utilities",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "Injector@example.com"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "world": "MAIN",
+      "js": ["src/youtube/youtube.js", "libs/odometer/odometer.js"],
+      "css": ["src/youtube/youtube.css", "libs/odometer/odometer.css"],
+      "all_frames": true,
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://music.youtube.com/*"],
+      "world": "MAIN",
+      "js": ["src/yt-music/youtube-m.js"],
+      "css": ["src/yt-music/youtube-m.css"],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["rsc/./*.js", "rsc/./*.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
