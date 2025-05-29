@@ -66,43 +66,18 @@ yt-icon.ytd-logo {
   bottom: 0 !important;
 }
 
-yt-tab-shape.yt-tab-shape-wiz.yt-tab-shape-wiz--host-clickable[aria-selected="true"] {
+yt-tab-shape.yt-tab-shape-wiz.yt-tab-shape-wiz--host-clickable[aria-selected=true] {
   height: 46px !important;
   background: rgba(255, 255, 255, 0.2) !important;
   border-bottom: 1px solid #fff;
 }
 
 html {
-  --ytd-rich-grid-items-per-row: 4;
-  --ytd-rich-grid-posts-per-row: 3;
-  --ytd-rich-grid-slim-items-per-row: 6;
-  --ytd-rich-grid-game-cards-per-row: 6;
   --ytd-rich-grid-item-margin: 7.3px !important;
-  --ytd-rich-grid-compact-item-margin: 4px;
-  --ytd-rich-grid-shorts-item-margin: 4px;
-  --ytd-rich-grid-item-min-width: 310px;
-  --ytd-rich-grid-item-max-width: 500px;
-  --ytd-rich-grid-mini-item-min-width: 240px;
-  --ytd-rich-grid-mini-item-max-width: 320px;
-  --ytd-rich-grid-slim-item-max-width: 220px;
 }
 
 ytd-app {
-  --app-drawer-width: 240px;
-  --ytd-persistent-guide-width: 240px;
-  --ytd-permission-role-bottom-bar-height: 30px;
-  --ytd-mini-guide-width: 72px;
-  --app-drawer-content-container-background-color: var(
-    --yt-bg-second-secondary
-  ) !important;
-  /* background-size: 360% 360% !important; */
-  /* animation: gradient-animation 8s ease infinite !important; */
-  display: block;
-  left: 0;
-  min-height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
+  --app-drawer-content-container-background-color: var(--yt-bg-second-secondary) !important;
   scrollbar-color: var(--yt-spec-text-secondary) transparent;
 }
 
@@ -151,29 +126,10 @@ ytd-feed-filter-chip-bar-renderer[fluid-width] #chips-content.ytd-feed-filter-ch
 }
 
 #scrim.tp-yt-app-drawer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition-property: opacity;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  opacity: 0;
   background: rgba(0, 0, 0, 0.3) !important;
 }
 
 #contentContainer.tp-yt-app-drawer {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: var(--app-drawer-width, 256px);
-  padding: var(--app-drawer-content-padding, 120px 0);
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  -webkit-transform: translate3d(-100%, 0, 0);
-  transform: translate3d(-100%, 0, 0);
   background-color: transparent !important;
   background-color: transparent !important;
 }
@@ -236,134 +192,22 @@ html[dark],
   --ytd-searchbox-legacy-button-hover-border-color: blue !important;
   --ytd-searchbox-legacy-button-icon-color: hsla(0, 100%, 100%, 0.5) !important;
   --ytd-searchbox-background: transparent !important;
-  --ytd-searchbox-text-color: hsla(0, 100%, 100%, 0.88);
 }
 
 html[dark],
 [dark] {
   --yt-bg-first-primary: #000 !important;
-  --yt-bg-first-secondary: linear-gradient(
-    -300deg,
-    red,
-    purple,
-    blue
-  ) !important;
-  --ytd-id-video-width: auto;
-  --yt-backdrop-filter: blur(30px);
+  --yt-bg-first-secondary: linear-gradient(-300deg,red,purple,blue) !important;
   --yt-bg-crusial: rgba(0, 0, 0, 0.4) !important;
-  --yt-bg-second-primary: rgba(0, 0, 0, 1);
-  --yt-bg-secondary: var(--yt-bg-second-primary);
-  --yt-bg-second-secondary: transparent;
   --yt-spec-guide-content-background: #101010 !important;
-  --yt-spec-raised-background: #212121;
-  --yt-spec-menu-background: #282828;
-  --yt-spec-inverted-background: #f1f1f1;
-  --yt-spec-additive-background: rgba(255, 255, 255, 0.1);
-  --yt-spec-outline: rgba(255, 255, 255, 0.2);
-  --yt-spec-shadow: rgba(0, 0, 0, 0.25);
   --yt-spec-text-primary: #fff !important;
   --yt-spec-text-secondary: rgba(255, 255, 255, 0.75) !important;
-  --yt-spec-text-disabled: #717171;
-  --yt-spec-text-primary-inverse: #030303;
-  --yt-spec-call-to-action: #3ea6ff;
-  --yt-spec-call-to-action-inverse: #065fd4;
-  --yt-spec-suggested-action: #263850;
-  --yt-spec-suggested-action-inverse: #def1ff;
-  --yt-spec-icon-active-other: #fff;
-  --yt-spec-icon-inactive: #909090;
-  --yt-spec-icon-disabled: #606060;
-  --yt-spec-button-chip-background-hover: rgba(255, 255, 255, 0.2);
-  --yt-spec-touch-response: #fff;
-  --yt-spec-touch-response-inverse: #000;
-  --yt-spec-brand-icon-active: #fff;
-  --yt-spec-brand-icon-inactive: #909090;
-  --yt-spec-brand-button-background: #c00;
-  --yt-spec-brand-link-text: #ff4e45;
-  --yt-spec-wordmark-text: #fff;
-  --yt-spec-error-indicator: #ff8983;
-  --yt-spec-themed-blue: #3ea6ff;
-  --yt-spec-themed-green: #2ba640;
-  --yt-spec-ad-indicator: #00aaa7;
-  --yt-spec-themed-overlay-background: rgba(0, 0, 0, 0.8);
-  --yt-spec-commerce-badge-background: #002d08;
-  --yt-spec-static-brand-red: #f00;
-  --yt-spec-static-brand-white: #fff;
-  --yt-spec-static-brand-black: #212121;
-  --yt-spec-static-clear-color: rgba(255, 255, 255, 0);
-  --yt-spec-static-clear-black: rgba(0, 0, 0, 0);
-  --yt-spec-static-ad-yellow: #fbc02d;
-  --yt-spec-static-grey: #606060;
-  --yt-spec-static-overlay-background-solid: #000;
-  --yt-spec-static-overlay-background-heavy: rgba(0, 0, 0, 0.8);
-  --yt-spec-static-overlay-background-medium: rgba(0, 0, 0, 0.6);
-  --yt-spec-static-overlay-background-medium-light: rgba(0, 0, 0, 0.3);
-  --yt-spec-static-overlay-background-light: rgba(0, 0, 0, 0.1);
-  --yt-spec-static-overlay-text-primary: #fff;
-  --yt-spec-static-overlay-text-primary-inverse: #030303;
-  --yt-spec-static-overlay-text-secondary: rgba(255, 255, 255, 0.7);
-  --yt-spec-static-overlay-text-disabled: rgba(255, 255, 255, 0.3);
-  --yt-spec-static-overlay-call-to-action: #3ea6ff;
-  --yt-spec-static-overlay-icon-active-other: #fff;
-  --yt-spec-static-overlay-icon-inactive: rgba(255, 255, 255, 0.7);
-  --yt-spec-static-overlay-icon-disabled: rgba(255, 255, 255, 0.3);
-  --yt-spec-static-overlay-button-primary: rgba(255, 255, 255, 0.3);
-  --yt-spec-static-overlay-button-secondary: rgba(255, 255, 255, 0.1);
-  --yt-spec-static-overlay-touch-response: #fff;
-  --yt-spec-static-overlay-touch-response-inverse: #000;
-  --yt-spec-static-overlay-background-brand: rgba(204, 0, 0, 0.9);
-  --yt-spec-assistive-feed-themed-gradient-1: #005446;
-  --yt-spec-assistive-feed-themed-gradient-2: #39003f;
-  --yt-spec-assistive-feed-themed-gradient-3: #590000;
-  --yt-spec-discover-red: #ff4e45;
-  --yt-spec-discover-green: #a4ffa4;
-  --yt-spec-discover-blue: #6ea2ff;
-  --yt-spec-brand-background-solid: #212121;
-  --yt-spec-brand-background-primary: rgba(33, 33, 33, 0.98);
-  --yt-spec-brand-background-secondary: rgba(33, 33, 33, 0.95);
-  --yt-spec-general-background-a: #181818;
-  --yt-spec-general-background-d: linear-gradient(
-    to left,
-    black,
-    transparent
-  ) !important;
-  --yt-spec-general-background-b: #0f0f0f;
-  --yt-spec-general-background-c: #030303;
-  --yt-spec-error-background: #f9f9f9;
-  --yt-spec-10-percent-layer: rgba(255, 255, 255, 0.1);
-  --yt-spec-snackbar-background: #030303;
-  --yt-spec-snackbar-background-updated: #f9f9f9;
-  --yt-spec-badge-chip-background: #2020rgba(255, 0, 0, 1) !important;
-  --yt-spec-verified-badge-background: rgba(255, 255, 255, 0.25);
-  --yt-spec-call-to-action-faded: rgba(62, 166, 255, 0.3);
-  --yt-spec-call-to-action-hover: #6ebcff;
-  --yt-spec-brand-button-background-hover: #990412;
-  --yt-spec-brand-link-text-faded: rgba(255, 78, 69, 0.3);
-  --yt-spec-filled-button-focus-outline: rgba(255, 255, 255, 0.7);
-  --yt-spec-static-overlay-button-hover: rgba(255, 255, 255, 0.5);
-  --yt-spec-mono-filled-hover: #d9d9d9;
-  --yt-spec-commerce-filled-hover: #65b8ff;
-  --yt-spec-mono-tonal-hover: rgba(255, 255, 255, 0.2);
-  --yt-spec-commerce-tonal-hover: #515561;
-  --yt-spec-static-overlay-filled-hover: #e6e6e6;
-  --yt-spec-static-overlay-tonal-hover: rgba(255, 255, 255, 0.2);
-  --yt-spec-paper-tab-ink: rgba(255, 255, 255, 0.3);
-  --yt-spec-filled-button-text: #030303;
-  --yt-spec-selected-nav-text: #fff;
+  --yt-spec-general-background-d: linear-gradient(to left,black,transparent) !important;
 }
 
 #search-icon-legacy.ytd-searchbox {
   display: none !important;
-  border: 1px solid var(--ytd-searchbox-legacy-button-border-color);
-  background-color: var(--ytd-searchbox-legacy-button-color);
   border-radius: 14px 14px 14px 14px !important;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 14px;
-  border-bottom-left-radius: 14px;
-  cursor: pointer;
-  height: 40px;
-  width: 64px;
-  margin: 0;
   margin-left: 3px !important;
 }
 
@@ -461,97 +305,12 @@ ytd-c4-tabbed-header-renderer[use-page-header-style]
   width: 190px !important;
 }
 
-ytd-c4-tabbed-header-renderer[use-page-header-style]
-  .page-header-banner-image.ytd-c4-tabbed-header-renderer {
-  background-image: var(--yt-channel-banner);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-}
-
-#header.ytd-engagement-panel-title-header-renderer {
-  display: block;
-  padding: 4px 2px 4px 16px;
-  color: var(--yt-spec-text-primary);
-  background-color: rgba(255 255 255 0);
-  border-radius: 10px;
-  display: flexbox;
-  display: flex;
-  align-items: center;
-}
-
-#content.ytd-engagement-panel-section-list-renderer {
-  overflow: hidden;
-  height: calc(var(--ytd-engagement-panel-content-height) - 56px);
-  min-height: calc(var(--ytd-engagement-panel-content-min-height) - 56px);
-  width: var(--ytd-engagement-panel-content-width);
-  flex: 1 1 auto;
-  display: flexbox;
-  display: flex;
-  flex-direction: column;
-  background: black;
-}
-
 #movie_player > div.ytp-chrome-bottom > div.ytp-chrome-controls > div.ytp-right-controls > button:nth-child(2) {
   display: none !important;
 }
 
-ytd-reel-video-renderer[is-watch-while-mode]:not(
-    [enable-player-metadata-container]
-  )
-  .watch-while-engagement-panel.ytd-reel-video-renderer {
-  left: 100%;
-  min-width: 450px;
-  border-radius: 0 12px 12px 0;
-  position: fixed;
-  background: black;
-}
-
-#endpoint.yt-simple-endpoint.ytd-guide-entry-renderer {
-  min-height: 48px;
-  background-color: var(255 255 255 0.5);
-  cursor: pointer;
-  box-sizing: border-box;
-  outline: 0;
-  color: var(--yt-spec-text-primary);
-  display: flexbox;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.ytd-banner-promo-renderer-background.ytd-banner-promo-renderer {
-  display: none;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: auto 260px;
-  text-align: left;
-  height: 260px;
-  max-width: none;
-}
-
-.yt-core-image--loaded:hover {
-  visibility: inherit;
-}
-
 ytd-engagement-panel-section-list-renderer[dialog][dialog] {
-  margin-top: 0;
-  padding-top: 0;
   background-color: #101010 !important;
-}
-
-ytd-section-list-renderer[engagement-panel-dialog][should-scroll-in-panel]
-  #contents.ytd-section-list-renderer {
-  overflow-y: auto;
-  background-color: #101010;
 }
 
 tp-yt-paper-dialog.style-scope.ytd-popup-container {
@@ -1229,6 +988,18 @@ div.ytp-ce-expanding-overlay-background {
   box-shadow: none !important;
 }
 
+.ytp-ce-channel-title {
+  margin-bottom: 7px !important;
+}
+
+.ytp-ce-website-title {
+  color: #fff !important;
+}
+
+.ytp-ce-website-metadata {
+  color: #888888 !important;
+}
+
 .ytp-chrome-controls .ytp-button.ytp-miniplayer-button,
 .ytp-chrome-controls .ytp-size-button,
 .ytp-chrome-controls .ytp-button[aria-label*="Cinema"],
@@ -1555,6 +1326,10 @@ yt-notification-action-renderer[ui-refresh] #text.yt-notification-action-rendere
 yt-formatted-strings.style-scope.ytd-watch-metadata.odometer.odometer-theme-minimal {
   display: flex !important;
   gap: 5px !important;
+}
+
+span.odometer-suffix, h1.ytd-viewRenderer > strong, #date_text {
+  line-height: 2em;
 }
 
 .ytp-autohide .ytp-resolution-select {
