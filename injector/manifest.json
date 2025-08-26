@@ -58,6 +58,11 @@
       "all_frames": true
     },
     {
+      "matches": ["https://fmoviesunblocked.net/*"],
+      "js": ["src/fmovies/fmovies.js"],
+      "css": ["src/fmovies/fmovies.css"]
+    },
+    {
       "matches": ["https://*.samehadaku.email/*"],
       "css": ["src/samehadaku/samehadaku.css"]
     }
