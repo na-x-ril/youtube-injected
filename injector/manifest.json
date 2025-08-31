@@ -6,7 +6,7 @@
   "permissions": ["activeTab", "scripting", "storage", "webRequest"],
   "host_permissions": ["<all_urls>", "https://api-nazlly.vercel.app/*", "http://localhost:3000/*"],
   "action": {
-    "default_icon": "images/icon32.jpeg"
+    "default_icon": "assets/icon32.jpeg"
   },
   "browser_specific_settings": {
     "gecko": {
