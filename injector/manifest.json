@@ -4,7 +4,7 @@
   "description": "Customize the Entire Website UIs and Utilities",
   "manifest_version": 3,
   "permissions": ["activeTab", "scripting", "storage", "webRequest"],
-  "host_permissions": ["<all_urls>", "https://api-nazlly.vercel.app/*", "http://localhost:3000/*"],
+  "host_permissions": ["<all_urls>", "https://api-nazlly.vercel.app/*"],
   "action": {
     "default_icon": "assets/icon32.jpeg"
   },
